@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 //shorting url logic
 app.post("/short", shortUrl);
-// redirect to original UTRL using shotcode:- dynamic routing
+// redirect to original URL using shotcode:- dynamic routing
 app.get("/:shortCode", getOriginalUrl);
 
 const port = 1000;
